@@ -129,7 +129,7 @@ router.post("/register", async (req, res) => {
     return;
   }
 
-  res.status(200).send(req.body);
+  res.status(200).redirect("/student/login");
 });
 
 // GET /logout

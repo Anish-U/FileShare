@@ -45,7 +45,7 @@
 							<%= file.facultyName[0].username %>
 						</p>
 						<p class="card-text mb-4">
-							<%= (file.size/1024) %> Mb
+							<%= (file.size/1024).toFixed(2) %> Mb
 						</p>
 						<a href="/download/<%= file._id %>" class="card-link btn btn-dark">Download</a>
 						<a href="/faculty/delete/<%= file._id %>" class="card-link btn btn-danger">Delete</a>
